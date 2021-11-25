@@ -21,10 +21,6 @@ const mapStateToProps = state => {
 
 class Main extends Component {
 
-    // onCampsiteSelect(campsiteId) {
-    //     this.setState({selectedCampsite: campsiteId});
-    // }
-
     render() {
       const HomePage = () => {
           return (
@@ -56,11 +52,10 @@ class Main extends Component {
                   <Route exact path="/aboutus" render={() => <About partners={this.props.partners} />} />
                   <Redirect to='/home' />
               </Switch>
-              {/* <CampsiteInfo campsite={this.props.campsites.filter(campsite => campsite.id === this.props.selectedCampsite)[0]}/> */}
               <Footer />
           </div>
       );
   }
 }
 
-export default Main;
+export default withRouter(connect(mapStateToProps)(Main));

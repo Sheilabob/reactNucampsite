@@ -1,6 +1,7 @@
 import React , { Component } from "react";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron, Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import { Fade, Loop } from 'react-animation-components';
     
 class Header extends Component {
 
@@ -42,7 +43,11 @@ class Header extends Component {
                         <div className="row">
                             <div className="col">
                                 <h1>NuCamp</h1>
+                                <Loop in interval={1500} iterations={2.5}>
+                                <Fade in>
                                 <h2>a better way to camp</h2>
+                                </Fade>
+                                </Loop>
                             </div>
                         </div>
                     </div>

@@ -13,7 +13,6 @@ export const Campsites = (state = {
             case ActionTypes.CAMPSITES_FAILED:
                 return{...state, isLoading: false, errMess: action.payload };
     
-    
             default:
                 return state;
     }

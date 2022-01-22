@@ -28,6 +28,8 @@ function RenderCampsite({campsite}) {
 
 const maxLength = len => val => !val || (val.length <= len);
 const minLength = len => val => val && (val.length >= len);
+const hello = "This is a test"
+
 
 class CommentForm extends Component {
 

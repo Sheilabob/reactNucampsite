@@ -45,7 +45,7 @@ class Header extends Component {
                                 <h1>NuCamp</h1>
                                 <Loop in interval={1500} iterations={2.5}>
                                 <Fade in>
-                                <h2>a better way to camp</h2>
+                                <h2>TESTING THIS a better way to camp</h2>
                                 </Fade>
                                 </Loop>
                             </div>
